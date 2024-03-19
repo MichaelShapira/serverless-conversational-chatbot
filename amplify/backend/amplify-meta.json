@@ -1,0 +1,55 @@
+{
+  "providers": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-serverlessconversati-test-172708-authRole",
+      "UnauthRoleArn": "arn:aws:iam::346399954218:role/amplify-serverlessconversati-test-172708-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::346399954218:role/amplify-serverlessconversati-test-172708-authRole",
+      "Region": "us-east-1",
+      "DeploymentBucketName": "amplify-serverlessconversati-test-172708-deployment",
+      "UnauthRoleName": "amplify-serverlessconversati-test-172708-unauthRole",
+      "StackName": "amplify-serverlessconversati-test-172708",
+      "StackId": "arn:aws:cloudformation:us-east-1:346399954218:stack/amplify-serverlessconversati-test-172708/5379f210-e217-11ee-b1ee-0ec8cf4ba937",
+      "AmplifyAppId": "d3cbqktcmeqkyv"
+    }
+  },
+  "hosting": {
+    "amplifyhosting": {
+      "providerPlugin": "awscloudformation",
+      "service": "amplifyhosting",
+      "type": "manual",
+      "providerMetadata": {
+        "s3TemplateURL": "https://s3.amazonaws.com/amplify-serverlessconversati-test-172708-deployment/amplify-cfn-templates/hosting/amplifyhosting-template.json",
+        "logicalId": "hostingamplifyhosting"
+      },
+      "lastPushTimeStamp": "2024-03-14T15:31:29.631Z",
+      "output": {},
+      "lastPushDirHash": "6eClP0cIsHdofCjJ9ushFd86v5o="
+    }
+  },
+  "auth": {
+    "serverlessconversatie4f3f0d6": {
+      "service": "Cognito",
+      "providerPlugin": "awscloudformation",
+      "dependsOn": [],
+      "customAuth": false,
+      "frontendAuthConfig": {
+        "socialProviders": [],
+        "usernameAttributes": [],
+        "signupAttributes": [
+          "EMAIL"
+        ],
+        "passwordProtectionSettings": {
+          "passwordPolicyMinLength": 8,
+          "passwordPolicyCharacters": []
+        },
+        "mfaConfiguration": "OFF",
+        "mfaTypes": [
+          "SMS"
+        ],
+        "verificationMechanisms": [
+          "EMAIL"
+        ]
+      }
+    }
+  }
+}
